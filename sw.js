@@ -27,7 +27,7 @@ const saveSubscription = async (subscription) => {
 self.addEventListener("activate", async (e) => {
     const subscription = await self.registration.pushManager.subscribe({
         userVisibleOnly: true,
-        applicationServerKey: urlBase64ToUint8Array("YOUR_PUBLIC_KEY")
+        applicationServerKey: urlBase64ToUint8Array("BHOdzQWadoM60ZQKmihtSa028-1DCnjgcaRWJNF5mJgmMs4HI6tx12j2ADxlZRm4e1De0tMZhc38hetIumIuZiM")
     })
 
     const response = await saveSubscription(subscription)
